@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+     <header>
+        <nav align="center">
+            
+            <a href="Acceuil.html" class="LienTitre">Acceuil</a> | 
+            <a href="courses.html" class="LienTitre">Courses</a> | 
+            <a href="coach.html" class="LienTitre">Coach</a> | 
+            <a href="inscription.html" class="LienTitre">Inscription</a>
+            <hr>
+            <img src="images/img1.jpg" alt="img1" width="100%" height="400px"><br>
+            <hr>
+        </nav>
+     </header>
+     <section>
+        <form id="form">
+
+        <h1>Inscription :</h1>
+        <table>
+            <tr>
+                <td><label for="name">Nom* :</label></td>
+                <td><input type="text" id="name" required minlength="3" title="nom : minimum 3 caractères"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Prénom :</label></td>
+                <td><input type="text" id="lname" minlength="3"  title="prenom : minimum 3 caractères"></td>
+            </tr>
+            <tr>
+                <td><label for="adr">Adresse :</label></td>
+                <td><textarea id="adr" rows="7" title="Adresse et code postale"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="nbr">Num Tel* :</label></td>
+                <td><input type="number" id="nbr" minlength="8" maxlength="13"  required title="Numéro telephone personnel"></td>
+            </tr>
+            <tr>
+                <td><label for="dt">date de naissance :</label></td>
+                <td><input type="date" id="dt"  title="Date de naissance"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password* :</label></td>
+                <td><input type="password"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}" id="pass" required  title="le mot de passe"></td>
+            </tr>
+            <tr>
+                <td><label for="pass1">Confirmation Password* :</label></td>
+                <td><input type="password" id="pass1" required  title="confirmation de votre mot de passe"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Inscription" class="btn">
+                    <input type="reset" value="Annuler" class="btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </section>
+    <footer>
+        <br><br>
+        <hr>
+        <table width="100%">
+            <tr>
+                <td align="left"><h2>Contact Us</h2></td>
+                <td align="right">no where street</td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="mailto:sportgym@gmail.com">sportgym@gmail.com</a></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
